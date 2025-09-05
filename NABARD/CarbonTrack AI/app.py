@@ -11,6 +11,47 @@ from io import BytesIO
 from PIL import Image
 import os
 
+# Add this right after the imports and before the Flask app creation
+print("🚀 CarbonTrack AI Advanced Platform Starting...")
+print("📊 Initializing database...")
+
+# Initialize database immediately on startup
+def init_database():
+    conn = sqlite3.connect('carbontrack.db', check_same_thread=False)
+    c = conn.cursor()
+    
+    c.execute('''CREATE TABLE IF NOT EXISTS farmers (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        phone TEXT UNIQUE,
+        location TEXT,
+        registered_date TEXT
+    )''')
+    
+    c.execute('''CREATE TABLE IF NOT EXISTS submissions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        farmer_id INTEGER,
+        image_path TEXT,
+        tree_count INTEGER,
+        biomass_tons REAL,
+        carbon_credits REAL,
+        uncertainty_percent REAL,
+        verification_hash TEXT,
+        satellite_confirmed BOOLEAN DEFAULT 0,
+        status TEXT DEFAULT 'pending',
+        timestamp TEXT,
+        location_lat REAL,
+        location_lng REAL,
+        FOREIGN KEY (farmer_id) REFERENCES farmers (id)
+    )''')
+    
+    conn.commit()
+    conn.close()
+    print("✅ Database initialized successfully")
+
+# Call it immediately
+init_database()
+
 app = Flask(__name__)
 
 def init_database():
