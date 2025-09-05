@@ -629,11 +629,6 @@ def verify_satellite():
     return jsonify({'status': 'success', 'verified_count': verified_count})
 
 if __name__ == '__main__':
-    print("🚀 CarbonTrack AI Advanced Platform Starting...")
-    print("📊 Dashboard: http://localhost:5000/dashboard")
-    print("🔬 Features: Real Computer Vision, IPCC Carbon Calc, Blockchain Verification")
-    
-    init_database()
-    print("✅ Database initialized")
-    
-    app.run(debug=True, port=5000, host='0.0.0.0')
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
