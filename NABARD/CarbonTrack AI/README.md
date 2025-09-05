@@ -292,7 +292,7 @@ CarbonTrack AI/
 ## Contact & Contribution
 
 **Live Demo**: https://hackathon-m3es.onrender.com
-**GitHub**: https://github.com/Sugunak14/Hackathon
+**GitHub**: https://github.com/Sugunak14/Hackathon/NABARD/CarbonTrack AI
 **NABARD Hackathon 2025 Submission**
 
 For technical questions or collaboration opportunities, please refer to the GitHub repository or test the live demonstration platform.
