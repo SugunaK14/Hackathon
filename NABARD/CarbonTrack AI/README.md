@@ -9,8 +9,6 @@ Current MRV (Monitoring, Reporting, Verification) systems for carbon credits cos
 ### Our Solution
 **CarbonTrack AI** - A WhatsApp-based platform that automates carbon credit verification using computer vision and AI, reducing costs to $0.50 per farmer while maintaining scientific accuracy.
 
-Yes, let me elaborate on the user workflow for your solution. Here's how the image upload process works step-by-step:
-
 ## User Workflow: Image Upload to Carbon Credits
 
 ### Step 1: Image Capture
