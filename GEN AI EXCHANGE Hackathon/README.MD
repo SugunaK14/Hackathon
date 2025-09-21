@@ -1,21 +1,25 @@
 # VentureIQ: AI-Powered Investment Analysis Platform
 
-**Team:** The White Singularity  
-**Team Leader:** Vidit (Shanaaya) Singh Gautam  
-**Hackathon:** Google Cloud Gen AI Exchange Hackathon  
-**Problem Statement:** AI Analyst for Startup Evaluation
+## Team Name
+**The White Singularity**
 
-## 🚀 Project Overview
+## Problem Statement
+AI Analyst for Startup Evaluation - Transforming the inefficient 20+ hour manual startup due diligence process into intelligent, automated analysis.
 
-VentureIQ is the world's first Multi-Agent Investment Analysis Platform that transforms startup due diligence from a 20-hour manual process into a 2-minute AI-powered analysis. Our platform revolutionizes how investors evaluate startup opportunities by deploying 5 specialized AI agents that work simultaneously like a complete investment committee.
+## Our Solution
+VentureIQ is the world's first Multi-Agent Investment Analysis Platform that revolutionizes startup evaluation through 5 specialized AI agents working simultaneously like a complete investment committee:
 
-## 💡 The Problem
+- **Document Intelligence Agent** - Extracts financial data and metrics from pitch decks
+- **Market Research Agent** - Benchmarks against 500+ real startups  
+- **Risk Assessment Agent** - Provides ML-powered success predictions
+- **Competitive Intelligence Agent** - Performs autonomous competitive research
+- **Portfolio Impact Agent** - Models investment returns and portfolio optimization
 
-Traditional startup due diligence is:
-- **Time-consuming**: 20+ hours of manual analysis per startup
-- **Inconsistent**: Human bias affects investment decisions
-- **Resource-intensive**: Requires multiple analysts and extensive research
-- **Limited scope**: Difficult to benchmark against comprehensive datasets
+Our platform delivers investment-grade reports with clear BUY/HOLD/PASS recommendations in just 2 minutes, reducing analysis time by 95% while maintaining professional-grade quality.
+
+## Demo
+Please find our working demo and presentation materials at the Google Drive link below:
+Demo Link - https://drive.google.com/file/d/1x0Ff8Gwoha3gOop2_5_YS7xf9NRvvFNy/view?usp=sharing
 
 ## 🎯 Our Solution
 
@@ -159,39 +163,12 @@ Five specialized AI agents working in parallel:
 2. **Industry Presence**: Conference demonstrations and thought leadership
 3. **Strategic Partnerships**: Integration with existing investment software providers
 
-## 📊 Usage Example
-
-```bash
-# Upload startup pitch deck
-curl -X POST /api/analyze \
-  -H "Content-Type: multipart/form-data" \
-  -F "file=@startup_pitch.pdf" \
-  -F "analysis_type=comprehensive"
-
-# Get analysis results
-curl -X GET /api/results/{analysis_id}
-```
-
 ## 🔐 Security & Compliance
 
 - Firebase Authentication for secure user management
 - Google Cloud security features for enterprise-grade protection
 - Data encryption for sensitive financial information
 - SOC 2 compliance ready architecture
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact
-
-**Team Leader:** Vidit (Shanaaya) Singh Gautam  
-**Email:** [team@ventureiq.ai](mailto:team@ventureiq.ai)  
-**Project Repository:** [GitHub](https://github.com/SugunaK14/Hackathon)
 
 ## 🙏 Acknowledgments
 
